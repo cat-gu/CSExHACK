@@ -64,7 +64,7 @@
           </ul>
         </div>
         <div class="cat-gu col-sm-3">
-          <h3>Interesetd in Gothenburg University's Computer Science Department?</h3>
+          <h3>Interested in Gothenburg University's Computer Science Department?</h3>
           <ul>
             <li>
               Click
@@ -75,7 +75,7 @@
       </div>
       <div class="cat-legal row">
         <div class="col-sm-6">
-          <p>Copyright &copy; 2019 CTR-Alt-TEAM. All rights reserved.</p>
+          <p>Copyright &copy; 2019 CTRL-Alt-TEAM. All rights reserved.</p>
         </div>
         <div class="col-sm-6">
           <p>Yours truly, C.A.T ❤️.</p>
