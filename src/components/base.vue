@@ -8,11 +8,11 @@
       </div>
       <div class="cat-signup col-sm-6">
         <p v-html="text.hackathon_description"></p>
-        <button
-          type="button"
+        <a
           class="btn btn-success btn-lg"
-          v-bind:href="cat_data.signup"
-        >Click me to Sign Up</button>
+          v-bind:href="cat_data.register"
+          target="_blank"
+        >Click me to Sign Up</a>
       </div>
     </div>
   </div>
