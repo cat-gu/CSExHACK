@@ -1,6 +1,7 @@
 const cat_data = {
   facebook: "https://www.facebook.com/ctrlaltteam/",
   mail: "mailto:cat@gota.gu.se",
+  twitter: "https://twitter.com/ctrlaltteam",
   signup: "mailto:cat@gota.gu.se?subject=I'd like to become a C.A.T",
   gu: "https://cse.gu.se/english",
   location:

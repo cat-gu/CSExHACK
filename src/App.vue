@@ -41,6 +41,9 @@
               <a v-bind:href="cat_data.facebook" target="_blank">Facebook</a>
             </li>
             <li>
+              <a v-bind:href="cat_data.twitter" target="_blank">Twitter</a>
+            </li>
+            <li>
               Email
               <a v-bind:href="cat_data.mail">cat@gota.gu.se</a>
             </li>
