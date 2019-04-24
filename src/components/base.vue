@@ -15,6 +15,15 @@
         >Click me to Sign Up</a>
       </div>
     </div>
+    <div class="row cat-partners">
+      <div id="cat-partners-openhack" class="col-sm-4 offset-sm-1">
+        <img class="col-sm-3" src="./../assets/img/partners/logo-openhack.png" height="60" />
+        <img class="col-sm-3" src="./../assets/img/partners/logo-ericsson.png" height="60" />
+      </div>
+      <div id="cat-hackexample-video" class="col-sm-6 offset-sm-1">
+          <iframe width="480" height="260" src="https://www.youtube.com/embed/6VakF2hZFPQ" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
   </div>
 </template>
 
@@ -49,7 +58,7 @@ export default {
 
 .cat-title {
   font-family: "Roboto Slab", serif;
-  padding: 5% 0%;
+  padding: 3% 0%;
 }
 
 .cat-signup {
@@ -61,5 +70,13 @@ export default {
   font-family: "Inconsolata", monospace;
   font-size: 1.5em;
   padding: 10% 5%;
+}
+
+#cat-hackexample-video{
+  margin-top: 15px;
+}
+
+#cat-partners-openhack{
+  margin-top: 5%;
 }
 </style>
