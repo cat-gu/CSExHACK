@@ -30,7 +30,6 @@ import faqsleep from "./sub_components/faq-cards/faq-sleep.vue";
 import faqadvice from "./sub_components/faq-cards/faq-advice.vue";
 import faqfood from "./sub_components/faq-cards/faq-food.vue";
 import faqlinks from "./sub_components/faq-cards/faq-links.vue";
-import faqtest from "./sub_components/faq-cards/faq-test.vue";
 export default {
   name: "faq",
   components: {
@@ -41,7 +40,6 @@ export default {
     faqadvice,
     faqfood,
     faqlinks,
-    faqtest
   },
 };
 </script>
