@@ -1,11 +1,11 @@
 <template>
   <div>
-    <section>
+    <div>
       <article class="previousHacks-title col-sm-14 offset-sm-0">
         <h>Gallery</h>
         <hr class="hr"> 
       </article>
-    </section>
+    </div>
 
     <gallery/>
   </div>
