@@ -242,8 +242,7 @@
 <script>
 export default {
   name: "faqlinks",
-  data() {
-  }
+ 
 };
 </script>
 

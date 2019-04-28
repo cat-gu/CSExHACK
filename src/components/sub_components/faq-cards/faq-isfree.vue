@@ -18,8 +18,7 @@
 <script>
 export default {
   name: "faqisfree",
-  data() {
-  }
+  
 };
 </script>
 

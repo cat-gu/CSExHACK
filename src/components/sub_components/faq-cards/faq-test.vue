@@ -1,6 +1,5 @@
- <template>
- 
- <div role="tablist">
+<template>
+  <div role="tablist">
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
         <b-button block href="#" v-b-toggle.accordion-1 variant="info">Accordion 1</b-button>
@@ -12,14 +11,34 @@
         </b-card-body>
       </b-collapse>
     </b-card>
- </div>
 
+    <b-card no-body class="mb-1">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <b-button block href="#" v-b-toggle.accordion-2 variant="info">Accordion 2</b-button>
+      </b-card-header>
+      <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <b-card-text>{{ text }}</b-card-text>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+
+    <b-card no-body class="mb-1">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <b-button block href="#" v-b-toggle.accordion-3 variant="info">Accordion 3</b-button>
+      </b-card-header>
+      <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <b-card-text>{{ text }}</b-card-text>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+  </div>
 </template>
+
 <script>
 import Collapse from 'bootstrap-vue/es/components/collapse'
-
-export default {
-  name: "faqadvice",
+  export default {
     data() {
       return {
         text: `
@@ -34,11 +53,5 @@ export default {
         `
       }
     }
-};
+  }
 </script>
-
-
-<style scoped>
-    @import "../../../../src/assets/style/temp-style.css";
-
-</style>

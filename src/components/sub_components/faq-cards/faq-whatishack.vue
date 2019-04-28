@@ -39,8 +39,7 @@
 <script>
 export default {
   name: "faqwhatishack",
-  data() {
-  }
+
 };
 </script>
 

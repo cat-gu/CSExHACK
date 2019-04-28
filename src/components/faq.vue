@@ -9,26 +9,28 @@
             </div>
 
             <div class="col-sm-6 offset-3 sectionText" id="faq">
-                <faqwhatishack></faqwhatishack>
-                <faqisfree></faqisfree>
-                <faqlanguage></faqlanguage>
-                <faqsleep></faqsleep>
-                <faqadvice></faqadvice>
-                <faqfood></faqfood>
-                <faqlinks></faqlinks>
+                <faqwhatishack/>
+                <faqisfree/>
+                <faqlanguage/>
+                <faqsleep/>
+                <faqadvice/>
+                <faqfood/>
+                <faqlinks/>
+                <faqtest/>
 
             </div>
         </div>
 </template>
 
 <script>
-import faqwhatishack from "./sub_components/faq-cards/faq-whatishack";
-import faqisfree from "./sub_components/faq-cards/faq-isfree";
-import faqlanguage from "./sub_components/faq-cards/faq-language";
-import faqsleep from "./sub_components/faq-cards/faq-sleep";
-import faqadvice from "./sub_components/faq-cards/faq-advice";
-import faqfood from "./sub_components/faq-cards/faq-food";
-import faqlinks from "./sub_components/faq-cards/faq-links";
+import faqwhatishack from "./sub_components/faq-cards/faq-whatishack.vue";
+import faqisfree from "./sub_components/faq-cards/faq-isfree.vue";
+import faqlanguage from "./sub_components/faq-cards/faq-language.vue";
+import faqsleep from "./sub_components/faq-cards/faq-sleep.vue";
+import faqadvice from "./sub_components/faq-cards/faq-advice.vue";
+import faqfood from "./sub_components/faq-cards/faq-food.vue";
+import faqlinks from "./sub_components/faq-cards/faq-links.vue";
+import faqtest from "./sub_components/faq-cards/faq-test.vue";
 export default {
   name: "faq",
   components: {
@@ -38,10 +40,9 @@ export default {
     faqsleep,
     faqadvice,
     faqfood,
-    faqlinks
+    faqlinks,
+    faqtest
   },
-  data() {
-  }
 };
 </script>
 
