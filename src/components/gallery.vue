@@ -38,6 +38,13 @@ export default {
           poster: "https://img.youtube.com/vi/hNdlUHBJDKs/maxresdefault.jpg"
         },
         {
+          title: "A YouYube video",
+          href: "https://www.youtube.com/watch?v=hNdlUHBJDKs",
+          type: "text/html",
+          youtube: "hNdlUHBJDKs",
+          poster: "https://img.youtube.com/vi/hNdlUHBJDKs/maxresdefault.jpg"
+        },
+        {
         title: "Dummy Pic",
         href: "https://i.imgur.com/H9dTdSI.jpg",
         type: "text/html",

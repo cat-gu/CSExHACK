@@ -6,7 +6,7 @@ var batch1 = [
     },
     {
         name: "Dimitris Platis",
-        img: "src/assets/img/organizers/dimitris.jpg"
+        img: 'src/assets/img/organizers/dimitris.jpg'
     },
     {
         name: "Ranim Khojah",

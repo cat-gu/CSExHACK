@@ -3,11 +3,7 @@
   <div id="team">
     <div class="container-fluid">
       <div class="row">
-        <div id="teamText">
-          <div class="sectionTitle">
-            <h2>The Organizers</h2>
-          </div>
-        </div>
+
       </div>
 
       <div class="card-deck">
@@ -48,7 +44,8 @@ import organizer_list from "../assets/values/organizers.js";
 export default {
   name: "organizers",
   components: {
-    organizer_profile
+    organizer_profile,
+
   },
   data() {
     return {
