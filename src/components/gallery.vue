@@ -26,9 +26,9 @@ export default {
       images: [ //Not a good naming convention since there are videos in the array of objects here
         {
         title: "Dummy Pic",
-        href: "https://dummyimage.com/800/ffffff/000000",
+        href: "https://i.imgur.com/H9dTdSI.jpg",
         type: "text/html",
-        poster: "https://dummyimage.com/800/ffffff/000000"
+        poster: "https://i.imgur.com/H9dTdSI.jpg",
         },
         {
           title: "A YouYube video",
@@ -36,7 +36,13 @@ export default {
           type: "text/html",
           youtube: "hNdlUHBJDKs",
           poster: "https://img.youtube.com/vi/hNdlUHBJDKs/maxresdefault.jpg"
-        }
+        },
+        {
+        title: "Dummy Pic",
+        href: "https://i.imgur.com/H9dTdSI.jpg",
+        type: "text/html",
+        poster: "https://i.imgur.com/H9dTdSI.jpg",
+        },
       ],
       index: null
     };

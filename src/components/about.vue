@@ -2,7 +2,9 @@
   <div>
     <div>
       <article class="previousHacks-title col-sm-14 offset-sm-0">
+        <div>
         <h>Gallery</h>
+        </div>
         <hr class="hr"> 
       </article>
     </div>
