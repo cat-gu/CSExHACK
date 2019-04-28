@@ -1,29 +1,38 @@
-<template>
-    <div class="card">
-        <div class="card-header" id="languageHead">
-            <h5 class="mb-0">
-                Do I need to speak Swedish?
-                <!--<button class="btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#whatIsLanguage" aria-expanded="false" aria-controls="whatIsLanguage">
-                Do I need to speak Swedish?
-                </button>-->
-            </h5>
-        </div>
-        <div id="whatIsLanguage" class="collapse show" aria-labelledby="languageHead" data-parent="#faqSection">
-            <div class="card-body">
-                You can speak whatever language you want within your team. However, presentations will be done in english... and so will
-                most of the mingling.                
-            </div>
-        </div>
-    </div>
+ <template>
+  <div role="tablist">
+    <b-card no-body class="mb-1">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <b-button block href="#" v-b-toggle.accordion-3 variant="dark">Do I need to speak Swedish?</b-button>
+      </b-card-header>
+      <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <b-card-text>
+            <h4>Swedish? Portugues? English? Kinyarwanda? Arabic?</h4>
+          </b-card-text>
+          <hr class="hr">
+          <b-card-text> {{ text1 }} </b-card-text>
+          
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+  </div>
 </template>
-
 <script>
+import Collapse from "bootstrap-vue/es/components/collapse";
+
 export default {
   name: "faqlanguage",
-
+  data() {
+    return {
+      text1: 
+      `You can speak whatever language you want within your team. 
+      However, presentations will be done in english... and so will 
+      most of the mingling.`,
+    };
+  }
 };
 </script>
 
 <style scoped>
-    @import "../../../../src/assets/style/temp-style.css";
+@import "../../../../src/assets/style/line-style.css";
 </style>

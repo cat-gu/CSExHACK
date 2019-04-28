@@ -51,7 +51,7 @@
 import Collapse from "bootstrap-vue/es/components/collapse";
 
 export default {
-  name: "faqadvice",
+  name: "whatishack",
   data() {
     return {
       text1: `Hackathon is a 48 hour (non-stop) event where groups 

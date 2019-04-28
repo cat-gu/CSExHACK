@@ -1,13 +1,5 @@
 <template>
         <div class="container-fluid">
-            <div class="row">
-                <div class='col-sm-3'></div>
-                <div class="sectionTitle col-sm-6">
-                    <h2>Frequently asked Questions</h2>
-                </div>
-                <div class='col-sm-3'></div>
-            </div>
-
             <div class="col-sm-6 offset-3 sectionText" id="faq">
                 <faqwhatishack/>
                 <faqisfree/>
@@ -17,7 +9,6 @@
                 <faqfood/>
                 <faqlinks/>
                 <faqtest/>
-
             </div>
         </div>
 </template>

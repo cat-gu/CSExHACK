@@ -69,7 +69,7 @@ export default {
   font-family: "Roboto Slab", serif;
   font-size: 50pt;
   padding: 3%;
-  color: blue;
+  color: skyblue
 }
 
 .previousHacks-titleGreen {
