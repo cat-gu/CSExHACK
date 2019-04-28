@@ -11,7 +11,7 @@
       v-for="(image, imageIndex) in images"
       :key="imageIndex"
       @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + image.poster + ')' ,width: '300px', height: '200px'}"
+      :style="{ backgroundImage: 'url(' + image.poster + ')' ,width: '470px', height: '350px'}"
       
     ></div>
   </div>
@@ -55,6 +55,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
   border: 1px solid #ebebeb;
-  margin: 5px;
+  margin: -20px 10px 60px 75px;
+  
 }
 </style>

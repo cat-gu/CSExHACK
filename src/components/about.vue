@@ -1,8 +1,9 @@
 <template>
   <div>
     <section>
-      <article class="cat-title col-sm-6 offset-sm-5">
-        <h1>The Principles of Good Design</h1>
+      <article class="previousHacks-title col-sm-14 offset-sm-0">
+        <h>Gallery</h>
+        <hr class="hr"> 
       </article>
     </section>
 
@@ -30,8 +31,19 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Anton|Inconsolata|Roboto+Slab");
 
-.cat-title {
+.previousHacks-title {
   font-family: "Roboto Slab", serif;
-  padding: 5% 0%;
+  font-size: 50pt;
+  padding: 3%;
+  color: red;
+}
+
+.hr { 
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1px 0;
+    padding: 0;
 }
 </style>
