@@ -1,29 +1,45 @@
-<template>
-    <div class="card">
-        <div class="card-header" id="foodHead">
-        <h5 class="mb-0">
-            What's the food situation like?
-                    <br>
-                    <small class="text-muted">(asking for a friend)</small>
-            <!--<button class="btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#whatIsFood" aria-expanded="false" aria-controls="whatIsFood">
-            Do I need to speak Swedish?
-            </button>-->
-        </h5>
-        </div>
-        <div id="whatIsFood" class="collapse show" aria-labelledby="foodHead" data-parent="#faqSection">
-            <div class="card-body">
-                Food will be provided by the organizers. You will be stuffed with pizza, candy and red bull until you tap out.       
-            </div>
-        </div>
-    </div>
+ <template>
+  <div role="tablist">
+    <b-card no-body class="mb-1">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <b-button block href="#" v-b-toggle.accordion-2 variant="dark"
+        >What is the food situation like? 
+            <h class="font">(asking for a friend 🤓)</h>
+            </b-button>
+      </b-card-header>
+      <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+        <b-card-body>
+          <b-card-text>
+            <h5>*In yoda voice* 
+              IMPORTANT, food is.🍕🍕🍕</h5>
+          </b-card-text>
+          <b-card-text> {{ text1 }} </b-card-text>
+          <hr class="hr">
+          
+        </b-card-body>
+      </b-collapse>
+    </b-card>
+  </div>
 </template>
-
 <script>
+import Collapse from "bootstrap-vue/es/components/collapse";
+
 export default {
   name: "faqfood",
+  data() {
+    return {
+      text1: `Food will be provided by the organizers. 
+      You will be stuffed with pizza, candy and red bull until you tap out. 🍭🍫🍬`,
+    };
+  }
 };
 </script>
 
+
 <style scoped>
-    @import "../../../../src/assets/style/temp-style.css";
+@import "../../../../src/assets/style/line-style.css";
+
+.font{
+    font-size: 8pt;
+}
 </style>
