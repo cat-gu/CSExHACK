@@ -19,18 +19,32 @@
       </article>
     </div>
     <organizers/>
+
+    <div>
+      <article class="previousHacks-titleGreen col-sm-14 offset-sm-0">
+        <div>
+        <h>Frequently Asked Questions - FAQ</h>
+        </div>
+        <hr class="hr"> 
+      </article>
+    </div>
+    <faq/>
+
+
   </div>
 </template>
 
 <script>
 import Gallery from "./gallery.vue";
 import organizers from "./organizers.vue";
+import faq from "./faq.vue"
 import text from "./../assets/values/text.js";
 export default {
   name: "About",
   components: {
     Gallery,
-    organizers
+    organizers,
+    faq
   },
   data() {
     return {
@@ -56,6 +70,13 @@ export default {
   font-size: 50pt;
   padding: 3%;
   color: blue;
+}
+
+.previousHacks-titleGreen {
+  font-family: "Roboto Slab", serif;
+  font-size: 50pt;
+  padding: 3%;
+  color: green;
 }
 
 .hr { 
