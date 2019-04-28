@@ -2,12 +2,12 @@
   <div role="tablist">
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-2 variant="dark"
+        <b-button block href="#" v-b-toggle.accordion-6 variant="dark"
         >What is the food situation like? 
             <h class="font">(asking for a friend 🤓)</h>
             </b-button>
       </b-card-header>
-      <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+      <b-collapse id="accordion-6" accordion="my-accordion" role="tabpanel">
         <b-card-body>
           <b-card-text>
             <h5>*In yoda voice* 
