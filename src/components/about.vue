@@ -1,14 +1,14 @@
 <template>
   <div>
     <div>
-      <article class="previousHacks-titleRed col-sm-14 offset-sm-0">
+      <article class="previousHacks-titleGreen col-sm-14 offset-sm-0">
         <div>
-        <h>Gallery</h>
+        <h>Frequently Asked Questions - FAQ</h>
         </div>
         <hr class="hr"> 
       </article>
     </div>
-    <gallery/>
+    <faq/>
 
      <div>
       <article class="previousHacks-titleBlue col-sm-14 offset-sm-0">
@@ -21,15 +21,14 @@
     <organizers/>
 
     <div>
-      <article class="previousHacks-titleGreen col-sm-14 offset-sm-0">
+      <article class="previousHacks-titleRed col-sm-14 offset-sm-0">
         <div>
-        <h>Frequently Asked Questions - FAQ</h>
+        <h>Gallery</h>
         </div>
         <hr class="hr"> 
       </article>
     </div>
-    <faq/>
-
+    <gallery/>
 
   </div>
 </template>
