@@ -22,6 +22,7 @@
         </div>
       </div>
       <div class="cat-hackathon-defintion col-sm-6">
+        <!-- <p style="color:red;">{{timeNow()}}</p> -->
         <p v-html="text.hackathon_description"></p>
       </div>
     </div>
@@ -43,6 +44,12 @@ export default {
       cat_data: cat_data,
       text: text
     };
+  },
+  methods: {
+    timeNow: function() {
+      var endgame = new Date().getTime();
+      return endgame;
+    }
   }
 };
 </script>
