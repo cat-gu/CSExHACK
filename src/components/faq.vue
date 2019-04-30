@@ -10,8 +10,6 @@
                 <faqlinks/>
                 <faqtest/>
             </div>
-            
-
         </div>
 </template>
 
@@ -38,9 +36,5 @@ export default {
 </script>
 
 <style scoped>
-
-.test{
-
-}
 
 </style>

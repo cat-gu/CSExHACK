@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div class="container-fluid">
       <article class="previousHacks-titleGreen col-sm-14 offset-sm-0">
         <div>
         <h>Frequently Asked Questions - FAQ</h>
@@ -8,9 +8,9 @@
         <hr class="hr"> 
       </article>
     </div>
-    <faq/>
+  <faq/>
 
-     <div>
+     <div class="container-fluid">
       <article class="previousHacks-titleBlue col-sm-14 offset-sm-0">
         <div>
         <h>Organizers</h>
@@ -18,31 +18,28 @@
         <hr class="hr"> 
       </article>
     </div>
-    <organizers/>
-
-    <div>
+  <organizers2/>
+    
       <article class="previousHacks-titleRed col-sm-14 offset-sm-0">
         <div>
         <h>Gallery</h>
         </div>
         <hr class="hr"> 
       </article>
-    </div>
-    <gallery/>
-
+  <gallery/>
   </div>
 </template>
 
 <script>
 import Gallery from "./gallery.vue";
-import organizers from "./organizers.vue";
+import organizers2 from "./organizers2.vue";
 import faq from "./faq.vue"
 import text from "./../assets/values/text.js";
 export default {
   name: "About",
   components: {
     Gallery,
-    organizers,
+    organizers2,
     faq
   },
   data() {
@@ -83,6 +80,15 @@ export default {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
+    margin: 1px 0;
+    padding: 0;
+}
+
+.transparentLine { 
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(200, 0, 0);
     margin: 1px 0;
     padding: 0;
 }
