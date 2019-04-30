@@ -35,7 +35,7 @@
 <script>
 import cat_data from "@/assets/values/links.js";
 import text from "@/assets/values/text.js";
-import sponsers from "@/components/sub_components/sponsers.vue";
+import sponsers from "@/components/subcomponents/sponsers.vue";
 export default {
   name: "Base",
   components: { sponsers },

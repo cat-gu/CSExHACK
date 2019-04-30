@@ -29,7 +29,6 @@
 </template>
 
 <script>
-import ericssonImg from "@/assets/img/sponsers/ericsson.jpg";
 import text from "@/assets/values/text.js";
 export default {
   name: "sponsers",

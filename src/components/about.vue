@@ -38,7 +38,6 @@
 <script>
 import gallery from "@/components/gallery.vue";
 import organizers2 from "@/components/organizers2.vue";
-import faq from "@/components/faq.vue";
 import text from "@/assets/values/text.js";
 export default {
   name: "About",
