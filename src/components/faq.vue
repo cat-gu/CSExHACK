@@ -1,6 +1,6 @@
 <template>
-        <div class="container-fluid">
-            <div class="col-sm-6 offset-3 sectionText" id="faq">
+        <div class="container-fluid row">
+            <div class="col-sm-6 offset-3" id="faq">
                 <faqwhatishack/>
                 <faqisfree/>
                 <faqlanguage/>

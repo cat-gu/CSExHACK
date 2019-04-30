@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class = "container-fluid row">
     <gallery
       :images="images"
       :index="index"
@@ -87,7 +87,6 @@ export default {
 .image {
   float: left;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
   border: 1px solid #ebebeb;
   margin: -10px 5px 60px 30px;

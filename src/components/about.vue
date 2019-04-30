@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container-fluid">
-      <article class="previousHacks-titleGreen col-sm-14 offset-sm-0">
+    <div class="container-fluid row">
+      <article class="previousHacks-titleGreen col-sm-12 offset-sm-0">
         <div>
         <h>Frequently Asked Questions - FAQ</h>
         </div>
@@ -10,8 +10,8 @@
     </div>
   <faq/>
 
-     <div class="container-fluid">
-      <article class="previousHacks-titleBlue col-sm-14 offset-sm-0">
+     <div class="container-fluid row">
+      <article class="previousHacks-titleBlue col-sm-12 offset-sm-0">
         <div>
         <h>Organizers</h>
         </div>
@@ -19,14 +19,22 @@
       </article>
     </div>
   <organizers2/>
-    
-      <article class="previousHacks-titleRed col-sm-14 offset-sm-0">
+  
+    <div class="container-fluid row">
+      <article class="previousHacks-titleRed col-sm-12 offset-sm-0">
         <div>
         <h>Gallery</h>
         </div>
         <hr class="hr"> 
       </article>
+    </div>
   <gallery/>
+
+  <div class="container-fluid">
+      <article class="previousHacks-titleBlue col-sm-14 offset-sm-0">
+      </article>
+  </div>
+
   </div>
 </template>
 
