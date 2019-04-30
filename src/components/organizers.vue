@@ -43,8 +43,8 @@
 </template>
 
 <script>
-import organizer_profile from "./sub_components/organizer_profile";
-import organizer_list from "../assets/values/organizers.js";
+import organizer_profile from "@/components/sub_components/organizer_profile";
+import organizer_list from "@/assets/values/organizers.js";
 export default {
   name: "organizers",
   components: {
