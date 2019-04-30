@@ -1,25 +1,25 @@
 <template>
   <div class="cat-terms container-fluid">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm">
         <div class="cat-header">
-          <div class="cat-title">
-            <p>
-              Terms
-              <br>of
-              <br>Conduct
-            </p>
-          </div>
-          <div class="cat-subtitle">
-            <p>
-              <strong>IMPORTANT:</strong> By registering your participation you agree to the terms and conditions presented
-              below. The CSE Hackathon follows the academic moral, ethics
-              and decency standards. Responsible behaviour is expected.
-            </p>
+          <div class="row">
+            <div class="cat-title col-sm-12">
+              <p>Terms of Conduct</p>
+            </div>
+            <div class="cat-subtitle col-sm-4 offset-sm-4">
+              <p>
+                <strong>IMPORTANT:</strong> By registering your participation you agree to the terms and conditions presented
+                below. The CSE Hackathon follows the academic moral, ethics
+                and decency standards. Responsible behaviour is expected.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="cat-body col-sm-7">
+    </div>
+    <div class="row">
+      <div class="cat-body col-sm-8 offset-sm-2">
         <ol>
           <li>
             <span class="cat-section">Code of conduct</span>:
@@ -113,23 +113,25 @@
   padding-bottom: 5%;
 }
 
+.cat-header {
+  margin: 0vh 0vw 5vh 0vw;
+}
 .cat-title {
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   font-size: 5em;
+  text-align: center;
 }
 
 .cat-subtitle {
   font-family: "Inconsolata", monospace;
   font-weight: bold;
   font-size: 1.5em;
-  padding: 4% 2% 2% 1%;
+  text-align: center;
 }
 
 .cat-subtitle strong {
   color: red;
-  font-size: 1.7em;
-  font-weight: bold;
 }
 
 .cat-section {
@@ -140,14 +142,12 @@
 }
 
 .cat-body {
-  border: 1px double red;
+  /* border: 1px double red; */
   font-family: "Inconsolata", monospace;
   font-size: 1.2em;
-  margin: 0 5% 0 0;
-  padding: 0 5% 5% 5%;
 }
 
-.cat-body ul li {
+.cat-body > ul > li {
   padding: 2% 0%;
 }
 </style>

@@ -3,45 +3,43 @@
     <div class="container-fluid row">
       <article class="previousHacks-titleGreen col-sm-12 offset-sm-0">
         <div>
-        <h>Frequently Asked Questions - FAQ</h>
+          <h>Frequently Asked Questions - FAQ</h>
         </div>
-        <hr class="hr"> 
+        <hr class="hr">
       </article>
     </div>
-  <faq/>
+    <faq/>
 
-     <div class="container-fluid row">
+    <div class="container-fluid row">
       <article class="previousHacks-titleBlue col-sm-12 offset-sm-0">
         <div>
-        <h>Organizers</h>
+          <h>Organizers</h>
         </div>
-        <hr class="hr"> 
+        <hr class="hr">
       </article>
     </div>
-  <organizers2/>
-  
+    <organizers2/>
+
     <div class="container-fluid row">
       <article class="previousHacks-titleRed col-sm-12 offset-sm-0">
         <div>
-        <h>Gallery</h>
+          <h>Gallery</h>
         </div>
-        <hr class="hr"> 
+        <hr class="hr">
       </article>
     </div>
-  <gallery/>
+    <gallery/>
 
-  <div class="container-fluid">
-      <article class="previousHacks-titleBlue col-sm-14 offset-sm-0">
-      </article>
-  </div>
-
+    <div class="container-fluid">
+      <article class="previousHacks-titleBlue col-sm-14 offset-sm-0"></article>
+    </div>
   </div>
 </template>
 
 <script>
 import Gallery from "./gallery.vue";
 import organizers2 from "./organizers2.vue";
-import faq from "./faq.vue"
+import faq from "./faq.vue";
 import text from "./../assets/values/text.js";
 export default {
   name: "About",
@@ -73,7 +71,7 @@ export default {
   font-family: "Roboto Slab", serif;
   font-size: 50pt;
   padding: 3%;
-  color: skyblue
+  color: skyblue;
 }
 
 .previousHacks-titleGreen {
@@ -83,21 +81,21 @@ export default {
   color: green;
 }
 
-.hr { 
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1px 0;
-    padding: 0;
+.hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1px 0;
+  padding: 0;
 }
 
-.transparentLine { 
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgb(200, 0, 0);
-    margin: 1px 0;
-    padding: 0;
+.transparentLine {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(200, 0, 0);
+  margin: 1px 0;
+  padding: 0;
 }
 </style>
