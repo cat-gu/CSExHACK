@@ -2,14 +2,7 @@
   <!-- organizers -->
   <div id="team">
     <div class="container-fluid">
-      <div class="row">
-        <div id="teamText">
-          <div class="sectionTitle">
-            <h2>The Organizers</h2>
-          </div>
-        </div>
-      </div>
-
+      <div class="row"></div>
       <div class="card-deck">
         <organizer_profile
           v-for="organizer in list1"

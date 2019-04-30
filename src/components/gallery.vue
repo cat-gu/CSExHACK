@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-fluid">
     <gallery
       :images="images"
       :index="index"
@@ -11,7 +11,7 @@
       v-for="(image, imageIndex) in images"
       :key="imageIndex"
       @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + image.poster + ')' ,width: '300px', height: '200px'}"
+      :style="{ backgroundImage: 'url(' + image.poster + ')' ,width: '550px', height: '350px'}"
       
     ></div>
   </div>
@@ -26,9 +26,9 @@ export default {
       images: [ //Not a good naming convention since there are videos in the array of objects here
         {
         title: "Dummy Pic",
-        href: "https://dummyimage.com/800/ffffff/000000",
+        href: "https://i.imgur.com/H9dTdSI.jpg",
         type: "text/html",
-        poster: "https://dummyimage.com/800/ffffff/000000"
+        poster: "https://i.imgur.com/H9dTdSI.jpg",
         },
         {
           title: "A YouYube video",
@@ -36,7 +36,20 @@ export default {
           type: "text/html",
           youtube: "hNdlUHBJDKs",
           poster: "https://img.youtube.com/vi/hNdlUHBJDKs/maxresdefault.jpg"
-        }
+        },
+        {
+          title: "A YouYube video",
+          href: "https://www.youtube.com/watch?v=hNdlUHBJDKs",
+          type: "text/html",
+          youtube: "hNdlUHBJDKs",
+          poster: "https://img.youtube.com/vi/hNdlUHBJDKs/maxresdefault.jpg"
+        },
+        {
+        title: "Dummy Pic",
+        href: "https://i.imgur.com/H9dTdSI.jpg",
+        type: "text/html",
+        poster: "https://i.imgur.com/H9dTdSI.jpg",
+        },
       ],
       index: null
     };
@@ -55,6 +68,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
   border: 1px solid #ebebeb;
-  margin: 5px;
+  margin: -10px 10px 60px 30px;
+  
 }
 </style>
