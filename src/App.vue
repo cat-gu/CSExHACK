@@ -14,12 +14,9 @@
         <!-- <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/organizers">Organizers</router-link>
         </div>-->
-        <!-- <div class="col-sm-1 offset-sm-1">
-          <router-link class="cat-navbar-text" to="/partners">Partners</router-link>
-        </div>-->
-        <!-- <div class="col-sm-1 offset-sm-1">
+        <div class="col-sm-1 offset-sm-1">
           <router-link class="cat-navbar-text" to="/terms">Terms</router-link>
-        </div>-->
+        </div>
         <!-- <div class="col-sm-1">
           <router-link class="cat-navbar-text" to="/gallery">Gallery</router-link>
         </div>-->
@@ -157,7 +154,6 @@ source: https://medium.freecodecamp.org/how-to-keep-your-footer-where-it-belongs
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 10rem;
   width: 100%;
 }
 .cat-footer h3 {
