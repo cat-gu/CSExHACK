@@ -17,6 +17,7 @@
     "jquery": "^1.9.1",
     "vue": "^2.6.10",
     "vue-gallery": "^2.0.0",
+    "vue-responsive": "^1.0.2",
     "vue-router": "^3.0.1",
     "vuetify": "^1.5.12"
   },

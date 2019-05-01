@@ -1,15 +1,5 @@
 <template>
-  <div>
-    <!-- <div class="container-fluid row">
-      <article class="previousHacks-titleGreen col-sm-12 offset-sm-0">
-        <div>
-          <h>Frequently Asked Questions - FAQ</h>
-        </div>
-        <hr class="hr">
-      </article>
-    </div>
-    <faq/> -->
-
+  <div v-responsive="['hidden-all','xs','sm']">
     <div class="container-fluid row">
       <article class="previousHacks-titleBlue col-sm-12 offset-sm-0">
         <div>
@@ -41,6 +31,7 @@ import Gallery from "./gallery.vue";
 import organizers2 from "./organizers2.vue";
 import faq from "./faq.vue";
 import text from "./../assets/values/text.js";
+import responsive from ('vue-responsive')
 export default {
   name: "About",
   components: {
