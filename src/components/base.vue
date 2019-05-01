@@ -93,7 +93,7 @@ export default {
 .cat-welcome {
   background-color: black;
   color: white;
-  height: 100vh;
+  height: 150vh;
 }
 .cat-welcome h1 {
   font-size: 10em;
