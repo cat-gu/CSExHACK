@@ -37,7 +37,6 @@
 import cat_data from "@/assets/values/links.js";
 import text from "@/assets/values/text.js";
 import sponsers from "@/components/sub_components/sponsers.vue";
-//import countdown from 'vue-awesome-countdown';
 export default {
   name: "Base",
   components: { sponsers /* , countdown */ },
@@ -69,13 +68,13 @@ export default {
       );
       this.timeRemaining =
         days +
-        " days : " +
+        "d : " +
         hours +
-        " hours : " +
+        "h : " +
         minutes +
-        " minutes : " +
+        "m : " +
         seconds +
-        " seconds";
+        "s";
     }
   },
   mounted() {
@@ -93,7 +92,7 @@ export default {
 .cat-welcome {
   background-color: black;
   color: white;
-  height: 150vh;
+  height: 100vh;
 }
 .cat-welcome h1 {
   font-size: 10em;
