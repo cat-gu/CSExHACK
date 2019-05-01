@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid row">
-    <div class="col-sm-6 offset-3" id="faq">
+  <div class=" image container-fluid row ">
+    <div class=" col-sm-6 offset-3" id="faq">
       <faqwhatishack/>
       <faqisfree/>
       <faqlanguage/>
@@ -36,4 +36,8 @@ export default {
 </script>
 
 <style scoped>
+.image {
+  margin: 50px;
+  
+}
 </style>

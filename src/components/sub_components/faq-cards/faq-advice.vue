@@ -2,7 +2,7 @@
   <div role="tablist">
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-5 variant="dark">Is there any advice?</b-button>
+        <b-button block href="#" v-b-toggle.accordion-5 variant="light">Is there any advice?</b-button>
       </b-card-header>
       <b-collapse id="accordion-5" visible accordion="my-accordion" role="tabpanel">
         <b-card-body>
