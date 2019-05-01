@@ -22,7 +22,8 @@
         </div>
       </div>
       <div class="cat-hackathon-defintion col-sm-6">
-        <!-- <p style="color:red;">{{timeNow()}}</p> -->
+        <h3> TIME LEFT: </h3>
+        <p id="countdown" style="color:red;">{{ timeRemaining }}</p>
         <p v-html="text.hackathon_description"></p>
       </div>
     </div>
@@ -36,20 +37,33 @@
 import cat_data from "@/assets/values/links.js";
 import text from "@/assets/values/text.js";
 import sponsers from "@/components/sub_components/sponsers.vue";
+import countdown from 'vue-awesome-countdown';
 export default {
   name: "Base",
-  components: { sponsers },
+  components: { sponsers , countdown},
   data() {
     return {
       cat_data: cat_data,
-      text: text
+      text: text,
+      timeRemaining: '',
     };
   },
   methods: {
-    timeNow: function() {
-      var endgame = new Date().getTime();
-      return endgame;
+    countdown() {
+      var deadline = 'May 10 2019 12:00:00 GMT+0200';
+      var remaining = Date.parse(deadline) - Date.parse(new Date());
+      var days = Math.floor( remaining / ( 1000 * 60 * 60 * 24 ) ).toLocaleString(undefined, {minimumIntegerDigits:2});
+      var hours = Math.floor( ( remaining / ( 1000 * 60 * 60 ) ) % 24 ).toLocaleString(undefined, {minimumIntegerDigits:2});
+      var minutes = Math.floor( ( remaining / ( 1000 * 60 ) ) % 60 ).toLocaleString(undefined, {minimumIntegerDigits:2});
+      var seconds = Math.floor( ( remaining / ( 1000 ) ) % 60 ).toLocaleString(undefined, {minimumIntegerDigits:2});
+      this.timeRemaining = days + ' : ' + hours + ' : ' + minutes + ' : ' + seconds;
     }
+  },
+  mounted() {
+    var self = this;
+    setInterval(function() {
+      self.countdown();
+    }, 1000);
   }
 };
 </script>
@@ -83,6 +97,20 @@ export default {
   text-align: center;
   align-content: center;
   justify-content: center;
-  padding: 20vh 5vw;
+  padding: 8vh 5vw;
+}
+
+#countdown {
+  font-size: 5vh;
+  font-weight: bolder;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+}
+
+h3 {
+  color: red;
+  font-size: 2vh;
+  text-align: center;
+  padding-top: 10vh;
 }
 </style>
