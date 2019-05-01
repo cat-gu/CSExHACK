@@ -5,21 +5,17 @@
         <div class="col-sm-1">
           <router-link class="cat-navbar-text" to="/">Home</router-link>
         </div>
-        <!-- <div class="col-sm-1 offset-sm-1">
+        <!-- <div class="col-sm-1">
           <router-link class="cat-navbar-text" to="/cases">Cases</router-link>
         </div>-->
-        <!-- <div class="col-sm-1 offset-sm-1">
-          <router-link class="cat-navbar-text" to="/schedule">Schedule</router-link>
-        </div>-->
-        <!-- <div class="col-sm-1 offset-sm-1">
-          <router-link class="cat-navbar-text" to="/organizers">Organizers</router-link>
-        </div>-->
-        <div class="col-sm-1 offset-sm-1">
-          <router-link class="cat-navbar-text" to="/terms">Terms</router-link>
-
-        </div>-->
-         <div class="col-sm-1">
+        <div class="col-sm-1">
+          <router-link class="cat-navbar-text" to="/faq">FAQ</router-link>
+        </div>
+        <!-- <div class="col-sm-1">
           <router-link class="cat-navbar-text" to="/about">About</router-link>
+        </div>-->
+        <div class="col-sm-1">
+          <router-link class="cat-navbar-text" to="/terms">Terms</router-link>
         </div>
       </div>
     </div>
@@ -75,11 +71,11 @@
         </div>
       </div>
       <div class="cat-legal row">
-        <div class="col-sm-6">
+        <div class="col-sm-3">
           <p>Copyright &copy; 2019 CTRL-Alt-TEAM. All rights reserved.</p>
         </div>
-        <div class="col-sm-6">
-          <p>Yours truly, C.A.T ❤️.</p>
+        <div class="col-sm-3">
+          <p>Made with ❤️ by C.A.T.</p>
         </div>
       </div>
     </div>
@@ -87,7 +83,7 @@
 </template>
 
 <script>
-import cat_data from "./assets/values/links.js";
+import cat_data from "@/assets/values/links.js";
 export default {
   name: "App",
   data() {
@@ -101,23 +97,15 @@ export default {
 <style>
 /* general */
 .cat-container {
+  background-color: black;
   position: relative;
   min-height: 100vh;
-  background-color: black;
 }
-.cat-content {
-  position: inherit;
-  height: 100%;
-
-  /* padd the bottom with the height of the footer. its a patch solution, but a begger should never be picky ;( */
-  padding-bottom: 10rem;
-}
-
 /* navbar */
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 .cat-navbar {
-  background-color: black;
   text-align: center;
+  background-color: black;
 }
 .cat-navbar-text {
   color: white;
@@ -126,26 +114,24 @@ export default {
   font-size: 1.5em;
   font-weight: bold;
 }
-/* .cat-navbar-text {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  font-family: "Inconsolata", monospace;
-  font-size: 1.5em;
-  font-weight: bold;
 
-} */
+/* content */
+.cat-content {
+  position: inherit;
+  height: 100%;
+  /* pad the bottom with the height of the footer. its a patch solution, but a begger should never be picky ;( */
+  padding-bottom: 25vh;
+}
 
 /* footer */
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 .cat-footer {
   background-color: black;
   color: white;
-
   text-decoration: none;
   font-family: "Inconsolata", monospace;
   font-size: 1em;
-  padding-top: 1%;
+  padding-top: 2vh;
 
   /* since the container in the app component is set to the height of the screen,
 we position the footer at the bottom of the page absolute to the container that the footer is in.
@@ -153,9 +139,9 @@ in other words, footer is inside another container that has the height of the en
 a relative position 
 source: https://medium.freecodecamp.org/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c */
   position: absolute;
+  height: 25vh;
   bottom: 0;
   left: 0;
-  width: 100%;
 }
 .cat-footer h3 {
   font-size: 1.2em;
@@ -174,6 +160,5 @@ source: https://medium.freecodecamp.org/how-to-keep-your-footer-where-it-belongs
 }
 .cat-legal {
   font-size: 0.8em;
-  text-align: center;
 }
 </style>

@@ -1,16 +1,16 @@
 <template>
-        <div class="container-fluid row">
-            <div class="col-sm-6 offset-3" id="faq">
-                <faqwhatishack/>
-                <faqisfree/>
-                <faqlanguage/>
-                <faqsleep/>
-                <faqadvice/>
-                <faqfood/>
-                <faqlinks/>
-                <faqtest/>
-            </div>
-        </div>
+  <div class="container-fluid row">
+    <div class="col-sm-6 offset-3" id="faq">
+      <faqwhatishack/>
+      <faqisfree/>
+      <faqlanguage/>
+      <faqsleep/>
+      <faqadvice/>
+      <faqfood/>
+      <faqlinks/>
+      <faqtest/>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -30,11 +30,10 @@ export default {
     faqsleep,
     faqadvice,
     faqfood,
-    faqlinks,
-  },
+    faqlinks
+  }
 };
 </script>
 
 <style scoped>
-
 </style>

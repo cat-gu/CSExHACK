@@ -1,6 +1,6 @@
 <template>
   <div id="organizer_card" class="card" style="width: 18rem;">
-    <img id="organizer_img" class="card-img-top" v-bind:src="organizer.img" alt="organizer">
+    <img id="organizer_img" class="card-img-top" :src="organizer.img" alt="organizer">
     <div id="organizer_text" class="card-body">
       <h5 id="organizer_text" class="card-title">{{organizer.name}}</h5>
       <p class="card-text">CSE Team!</p>

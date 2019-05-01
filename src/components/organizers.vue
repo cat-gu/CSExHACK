@@ -2,10 +2,7 @@
   <!-- organizers -->
   <div id="team">
     <div class="container-fluid">
-      <div class="row">
-
-      </div>
-
+      <div class="row"></div>
       <div class="card-deck">
         <organizer_profile
           v-for="organizer in list1"
@@ -39,13 +36,12 @@
 </template>
 
 <script>
-import organizer_profile from "./sub_components/organizer_profile";
-import organizer_list from "../assets/values/organizers.js";
+import organizer_profile from "@/components/sub_components/organizer_profile";
+import organizer_list from "@/assets/values/organizers.js";
 export default {
   name: "organizers",
   components: {
-    organizer_profile,
-
+    organizer_profile
   },
   data() {
     return {
