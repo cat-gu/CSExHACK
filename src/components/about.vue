@@ -31,7 +31,7 @@ import Gallery from "./gallery.vue";
 import organizers2 from "./organizers2.vue";
 import faq from "./faq.vue";
 import text from "./../assets/values/text.js";
-import responsive from ('vue-responsive')
+import vueResponsive from 'vue-responsive'
 export default {
   name: "About",
   components: {
