@@ -11,9 +11,9 @@
         <div class="col-sm-1">
           <router-link class="cat-navbar-text" to="/faq">FAQ</router-link>
         </div>
-        <!-- <div class="col-sm-1">
+         <div class="col-sm-1">
           <router-link class="cat-navbar-text" to="/about">About</router-link>
-        </div>-->
+        </div>
         <div class="col-sm-1">
           <router-link class="cat-navbar-text" to="/terms">Terms</router-link>
         </div>

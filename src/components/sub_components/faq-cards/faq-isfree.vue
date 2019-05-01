@@ -2,7 +2,7 @@
   <div role="tablist">
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-2 variant="dark">Is it free?</b-button>
+        <b-button block href="#" v-b-toggle.accordion-2 variant="light">Is it free?</b-button>
       </b-card-header>
       <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
         <b-card-body>

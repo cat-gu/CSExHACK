@@ -7,7 +7,7 @@
       @close="index = null"
     ></gallery>
     <div
-      class="image"
+      class="image row" 
       v-for="(image, imageIndex) in images"
       :key="imageIndex"
       @click="index = imageIndex"

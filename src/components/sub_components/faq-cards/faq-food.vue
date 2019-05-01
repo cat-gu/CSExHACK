@@ -2,7 +2,7 @@
   <div role="tablist">
     <b-card no-body class="mb-1">
       <b-card-header header-tag="header" class="p-1" role="tab">
-        <b-button block href="#" v-b-toggle.accordion-6 variant="dark"
+        <b-button block href="#" v-b-toggle.accordion-6 variant="light"
         >What is the food situation like? 
             <h class="font">(asking for a friend 🤓)</h>
             </b-button>
