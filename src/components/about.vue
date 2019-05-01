@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid row">
+    <!-- <div class="container-fluid row">
       <article class="previousHacks-titleGreen col-sm-12 offset-sm-0">
         <div>
           <h>Frequently Asked Questions - FAQ</h>
@@ -8,7 +8,7 @@
         <hr class="hr">
       </article>
     </div>
-    <faq/>
+    <faq/> -->
 
     <div class="container-fluid row">
       <article class="previousHacks-titleBlue col-sm-12 offset-sm-0">
@@ -62,21 +62,21 @@ export default {
 
 .previousHacks-titleRed {
   font-family: "Roboto Slab", serif;
-  font-size: 50pt;
+  font-size: 70pt;
   padding: 3%;
   color: red;
 }
 
 .previousHacks-titleBlue {
   font-family: "Roboto Slab", serif;
-  font-size: 50pt;
+  font-size: 70pt;
   padding: 3%;
   color: skyblue;
 }
 
 .previousHacks-titleGreen {
   font-family: "Roboto Slab", serif;
-  font-size: 50pt;
+  font-size: 70pt;
   padding: 3%;
   color: green;
 }
