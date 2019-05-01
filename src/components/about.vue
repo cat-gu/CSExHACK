@@ -31,7 +31,7 @@
   <gallery/>
 
   <div class="container-fluid">
-      <article class="previousHacks-titleBlue col-sm-14 offset-sm-0">
+      <article class="previousHacks-titleBlue col-sm-12 offset-sm-0">
       </article>
   </div>
 
@@ -41,7 +41,7 @@
 <script>
 import Gallery from "./gallery.vue";
 import organizers2 from "./organizers2.vue";
-import faq from "./faq.vue"
+import faq from "./faq.vue";
 import text from "./../assets/values/text.js";
 export default {
   name: "About",
