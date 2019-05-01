@@ -1,7 +1,7 @@
 <template>
-  <!-- <div>
-    <div class="container-fluid">
-      <article class="previousHacks-titleGreen col-sm-14 offset-sm-0">
+  <div>
+    <div class="container-fluid row">
+      <article class="previousHacks-titleGreen col-sm-12 offset-sm-0">
         <div>
           <h>Frequently Asked Questions - FAQ</h>
         </div>
@@ -10,8 +10,8 @@
     </div>
     <faq/>
 
-    <div class="container-fluid">
-      <article class="previousHacks-titleBlue col-sm-14 offset-sm-0">
+    <div class="container-fluid row">
+      <article class="previousHacks-titleBlue col-sm-12 offset-sm-0">
         <div>
           <h>Organizers</h>
         </div>
@@ -20,30 +20,31 @@
     </div>
     <organizers2/>
 
-    <article class="previousHacks-titleRed col-sm-14 offset-sm-0">
-      <div>
-        <h>Gallery</h>
-      </div>
-      <hr class="hr">
-    </article>
+    <div class="container-fluid row">
+      <article class="previousHacks-titleRed col-sm-12 offset-sm-0">
+        <div>
+          <h>Gallery</h>
+        </div>
+        <hr class="hr">
+      </article>
+    </div>
     <gallery/>
-  </div>-->
-  <div class="cat-about container-fluid">
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
+
+    <div class="container-fluid">
+      <article class="previousHacks-titleBlue col-sm-14 offset-sm-0"></article>
+    </div>
   </div>
 </template>
 
 <script>
-import gallery from "@/components/gallery.vue";
-import organizers2 from "@/components/organizers2.vue";
-import faq from "@/components/faq.vue";
-import text from "@/assets/values/text.js";
+import Gallery from "./gallery.vue";
+import organizers2 from "./organizers2.vue";
+import faq from "./faq.vue";
+import text from "./../assets/values/text.js";
 export default {
   name: "About",
   components: {
-    gallery,
+    Gallery,
     organizers2,
     faq
   },

@@ -1,56 +1,39 @@
 <template>
-  <div class="cat-faq container-fluid">
-    <div class="row">
-      <div class="cat-title col-sm">
-        <h1>Frequently Asked Questions</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-10 offset-sm-1">
-        <div class="cat-faq-card" v-for="faq in faqs" v-bind:key="faq.question">
-          <b-card bg-variant="light" text-variant="black" :title="faq.question">
-            <b-card-text>
-              <p v-html="faq.answer"></p>
-            </b-card-text>
-          </b-card>
-        </div>
-      </div>
+  <div class="container-fluid row">
+    <div class="col-sm-6 offset-3" id="faq">
+      <faqwhatishack/>
+      <faqisfree/>
+      <faqlanguage/>
+      <faqsleep/>
+      <faqadvice/>
+      <faqfood/>
+      <faqlinks/>
+      <faqtest/>
     </div>
   </div>
 </template>
 
 <script>
-import text from "@/assets/values/text.js";
+import faqwhatishack from "./sub_components/faq-cards/faq-whatishack.vue";
+import faqisfree from "./sub_components/faq-cards/faq-isfree.vue";
+import faqlanguage from "./sub_components/faq-cards/faq-language.vue";
+import faqsleep from "./sub_components/faq-cards/faq-sleep.vue";
+import faqadvice from "./sub_components/faq-cards/faq-advice.vue";
+import faqfood from "./sub_components/faq-cards/faq-food.vue";
+import faqlinks from "./sub_components/faq-cards/faq-links.vue";
 export default {
   name: "faq",
-  data: function() {
-    return {
-      faqs: text.faq
-    };
+  components: {
+    faqwhatishack,
+    faqisfree,
+    faqlanguage,
+    faqsleep,
+    faqadvice,
+    faqfood,
+    faqlinks
   }
 };
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Anton|Inconsolata|Roboto+Slab");
-
-.cat-faq {
-  color: white;
-  height: 150vh;
-}
-
-.cat-title {
-  font-family: "Roboto Slab", serif;
-  text-align: center;
-  padding: 10vh 5vw;
-}
-
-.cat-faq-card {
-  color: black;
-  padding: 1vh 0vw;
-}
-
-b-card {
-  color: red;
-}
 </style>

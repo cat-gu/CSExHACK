@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid row" >
     <gallery
       :images="images"
       :index="index"
@@ -11,7 +11,7 @@
       v-for="(image, imageIndex) in images"
       :key="imageIndex"
       @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + image.poster + ')' ,width: '550px', height: '350px'}"
+      :style="{ backgroundImage: 'url(' + image.poster + ')' ,width: '350px', height: '250px'}"
       
     ></div>
   </div>
