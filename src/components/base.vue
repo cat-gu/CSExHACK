@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="cat-hackathon-defintion col-sm-6">
-        <h3> TIME LEFT: </h3>
+        <h3>TIME LEFT:</h3>
         <p id="countdown" style="color:red;">{{ timeRemaining }}</p>
         <p v-html="text.hackathon_description"></p>
       </div>
@@ -37,26 +37,45 @@
 import cat_data from "@/assets/values/links.js";
 import text from "@/assets/values/text.js";
 import sponsers from "@/components/sub_components/sponsers.vue";
-import countdown from 'vue-awesome-countdown';
+//import countdown from 'vue-awesome-countdown';
 export default {
   name: "Base",
-  components: { sponsers , countdown},
+  components: { sponsers /* , countdown */ },
   data() {
     return {
       cat_data: cat_data,
       text: text,
-      timeRemaining: '',
+      timeRemaining: ""
     };
   },
   methods: {
     countdown() {
-      var deadline = 'May 10 2019 12:00:00 GMT+0200';
+      var deadline = "May 10 2019 12:00:00 GMT+0200";
       var remaining = Date.parse(deadline) - Date.parse(new Date());
-      var days = Math.floor( remaining / ( 1000 * 60 * 60 * 24 ) ).toLocaleString(undefined, {minimumIntegerDigits:2});
-      var hours = Math.floor( ( remaining / ( 1000 * 60 * 60 ) ) % 24 ).toLocaleString(undefined, {minimumIntegerDigits:2});
-      var minutes = Math.floor( ( remaining / ( 1000 * 60 ) ) % 60 ).toLocaleString(undefined, {minimumIntegerDigits:2});
-      var seconds = Math.floor( ( remaining / ( 1000 ) ) % 60 ).toLocaleString(undefined, {minimumIntegerDigits:2});
-      this.timeRemaining = days + ' : ' + hours + ' : ' + minutes + ' : ' + seconds;
+      var days = Math.floor(remaining / (1000 * 60 * 60 * 24)).toLocaleString(
+        undefined,
+        { minimumIntegerDigits: 2 }
+      );
+      var hours = Math.floor(
+        (remaining / (1000 * 60 * 60)) % 24
+      ).toLocaleString(undefined, { minimumIntegerDigits: 2 });
+      var minutes = Math.floor((remaining / (1000 * 60)) % 60).toLocaleString(
+        undefined,
+        { minimumIntegerDigits: 2 }
+      );
+      var seconds = Math.floor((remaining / 1000) % 60).toLocaleString(
+        undefined,
+        { minimumIntegerDigits: 2 }
+      );
+      this.timeRemaining =
+        days +
+        " days : " +
+        hours +
+        " hours : " +
+        minutes +
+        " minutes : " +
+        seconds +
+        " seconds";
     }
   },
   mounted() {
